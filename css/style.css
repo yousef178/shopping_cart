@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+
+  background: rgba(0, 0, 0, 0.025);
+}
+
+header {
+  padding: 10px 0;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+/* Header  */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+.logo img {
+  width: 54px;
+  height: 52px;
+}
+.logo span {
+  position: absolute;
+  top: 27px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Homee Section  */
+.home .ad {
+  position: relative;
+}
+.home .image1 {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+}
+.home .image2 {
+  top: 69px;
+  position: absolute;
+  left: 0;
+}
+.home .content-home {
+  position: absolute;
+  z-index: 100;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 368px;
+  height: 101.11px;
+}
+.home .content-home h2 {
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* product section*/
+.product-title {
+  padding: 15px 5px;
+  display: block;
+}
+.product-title h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+/* /* product cart  */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product-box {
+  position: relative;
+}
+
+.product-box a img {
+  width: 300px;
+}
+.product-box i {
+  position: absolute;
+  top: 20px;
+  right: 27px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 4px 3px;
+  cursor: pointer;
+}
+.product-box .product-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.product-box .product-desc h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.product-box .decs p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.buttonn {
+  margin: 47px 0;
+  display: block;
+  text-align: center;
+}
+.buttonn #button {
+  padding: 15px 56px;
+  background: #ffffff;
+  border-radius: 31px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #f61b5a;
+  cursor: pointer;
+  border: none;
+}
+/*Details */
+.details .container {
+  display: flex;
+  gap: 40px;
+}
+
+.details .image img {
+  width: 500px;
+  height: 700px;
+}
+
+.details .detail > p {
+  display: block;
+  align-items: center;
+
+  margin: 11px 0px;
+  background: #eef0f2;
+  width: 70.59px;
+  height: 29.83px;
+  border-radius: 6px;
+  padding: 7px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252c32;
+}
+.details .title {
+  padding: 30px 0px;
+}
+.details .title > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.022em;
+  color: #252c32;
+  padding-bottom: 15px;
+}
+.details .title > span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+
+  letter-spacing: -0.022em;
+  color: #252c32;
+}
+.details .title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #6e7c87;
+  padding-top: 30px;
+}
+
+.detail .describation > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252c32;
+}
+.detail .describation .ppp {
+  padding-top: 40px;
+}
+.details .size {
+  padding: 30px 0;
+}
+.details .size > p {
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252c32;
+  font-size: 18px;
+}
+.details .size > span {
+  padding: 9px 18px;
+  width: 1397px;
+  height: 926px;
+  left: 21px;
+  top: 109px;
+  background: #f6f8f9;
+}
+.details .size .active {
+  background: #e5e9eb;
+  border-radius: 6px 0px 0px 6px;
+}
+.details .button2 {
+  padding: 24px 0;
+}
+.details .button2 #button2 {
+  width: 426px;
+  height: 61px;
+  left: 849px;
+  top: 744px;
+  background: #ffffff;
+  border-radius: 31.5px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  color: #f61b5a;
+  cursor: pointer;
+}
+.button2 > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252c32;
+  text-align: center;
+  padding: 29px 2px;
+  display: none;
+}
+/*login*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 50%);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.login-container .login-title {
+  padding: 22px 0;
+}
+.login-container .login-title h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1a2530;
+}
+.login-container .login-title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #707b81;
+}
+.login-desc {
+  display: block;
+  padding-bottom: 16px;
+}
+.login-desc p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #212121;
+}
+.login-container .login-box form {
+  display: inline-block;
+  padding: 4px 0;
+}
+.login-container .login-box h5 {
+  padding: 15px 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: #212121;
+}
+.login-container .login-box input {
+  width: 764px;
+  height: 32px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #f89300;
+}
+.login-container .login-box .check {
+  display: block;
+  padding: 25px 0px;
+}
+.login-container .login-box .check input {
+  width: 15px;
+  height: 14px;
+  background: #f89300;
+}
+.login-container .login-box .check label {
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #212121;
+}
+.loginin {
+  padding: 18px 0;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+.loginin a {
+  width: 462px;
+  height: 61px;
+  background: #ffffff;
+  border-radius: 31.5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  color: #f61b5a;
+  cursor: pointer;
+  text-decoration: none;
+}
